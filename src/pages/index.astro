@@ -1,0 +1,25 @@
+---
+import AboutBanner from "../components/AboutBanner.astro";
+import HomeBanner from "../components/HomeBanner.astro";
+import Layout from "../layouts/Layout.astro";
+import ResourseAndMore from "../components/ResourceAndMore.astro";
+import MyProjects from "../components/MyProjects.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout
+  title="Portfolio de Angel Nieto - con 2 años de desarrollo de FrontEnd y Creación de Aplicaciones de Desktop"
+  description="Mi nombre Angel Nieto con 2 años de experiencia en desarrollo de Apps. Este es mi Portfolio y bienvenido.."
+>
+  <Navbar />
+  <main class="w-[100%] md:w-[600px] md:mx-auto mt-[50px] text-center">
+    <section>
+      <article>
+        <HomeBanner />
+        <AboutBanner />
+        <ResourseAndMore />
+        <MyProjects />
+      </article>
+    </section>
+  </main>
+</Layout>

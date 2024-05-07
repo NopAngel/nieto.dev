@@ -1,0 +1,9 @@
+---
+const { Icons } = Astro.props;
+const { Href } = Astro.props;
+const { AltIcons } = Astro.props;
+---
+
+<a href={Href} class="flex justify-center items-center bg">
+  <img src={Icons} alt={AltIcons} />
+</a>

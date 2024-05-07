@@ -1,0 +1,18 @@
+---
+const { href } = Astro.props;
+const { icon } = Astro.props;
+const { description } = Astro.props;
+const { title } = Astro.props;
+const { AltIcons } = Astro.props;
+---
+
+<a
+  href={href}
+  class="flex items-center md:w-[400px] w-[90%] mx-auto justify-around rounded-lg bg-[#171F26] mt-[20px]"
+>
+  <img src={icon} class="w-[30px]" alt={AltIcons} />
+  <div>
+    <h1 class="text-2xl font-semibold">{title}</h1>
+    <p class="opacity-50">{description}</p>
+  </div>
+</a>

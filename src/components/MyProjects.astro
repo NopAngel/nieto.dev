@@ -1,0 +1,51 @@
+---
+import CardProjects from "./elements/CardProjects.astro";
+---
+
+<div class="mt-[60px] w-[100%] mx-auto">
+  <h1 class="flex justify-center text-3xl font-semibold items-center *:m-[6px]">
+    <svg
+      class="size-7"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path
+        d="M14 4l-4 16"></path></svg
+    ><span>Mis Proyectos.</span>
+  </h1>
+  <div>
+    <CardProjects
+      Title="Disney Clone"
+      Description="My Clone Disney+"
+      FrameWorkUsage="#react + #tailwindcss"
+      Image="../../public/images/project_disney.png"
+      GithubLink="https://github.com/Angel45003/Disney-Clone"
+      AltImg="Proyecto clon de Disney+"
+    />
+
+    <CardProjects
+      Title="Iphone Website"
+      Description="My Clone Iphone Website"
+      FrameWorkUsage="#react + #tailwindcss"
+      Image="../../public/images/project_iphone.png"
+      GithubLink="https://github.com/Angel45003/"
+      AltImg="Proyecto Clon de la página oficial de Iphone"
+    />
+
+    <CardProjects
+      Title="Plants Clone"
+      Description="My Website Plants using HTML and CSS3"
+      FrameWorkUsage="#html + #css"
+      Image="../../public/images/project_plants.png"
+      GithubLink="https://github.com/Angel45003/cactus-landing"
+      AltImg="Proyecto landing page de Cactus"
+    />
+  </div>
+</div>

@@ -1,0 +1,11 @@
+---
+const { Number } = Astro.props;
+const { TextInfo } = Astro.props;
+---
+
+<div class="flex justify-center items-center">
+  <div>
+    <p class="text-1xl text-[#14a1f0]">{Number}</p>
+  </div>
+  <span class="text-xs p-[6px]">{TextInfo}</span>
+</div>

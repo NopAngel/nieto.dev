@@ -1,0 +1,48 @@
+---
+import AvatarImage from "../../public/images/avatars.jpeg";
+import { Image } from "astro:assets";
+import GithubIcon from "../../public/icons/Github.svg";
+import TwitterIcon from "../../public/icons/Twitter.svg";
+import LinkedinIcon from "../../public/icons/Linkedin.svg";
+import ButtonIcons from "./elements/ButtonIcons.astro";
+import Experience from "./elements/Experience.astro";
+---
+
+<div>
+  <div class="flex items-center justify-center">
+    <div class="rounded-full border-[10px] border-[#14a1f0]">
+      <Image
+        src={AvatarImage}
+        class="rounded-full p-[6px] w-[200px]"
+        alt="Foto de Angel Nieto."
+      />
+    </div>
+    <div>
+      <h1 class="font-semibold text-3xl">Angel Nieto</h1>
+      <p class="text-[#368cbe] p-[6px]">@angelnietodev</p>
+      <div id="redsSocials" class="flex justify-center items-center *:m-[6px]">
+        <!-- REDES SOCIALES: -->
+        <ButtonIcons
+          Href="https://www.twitter.com"
+          Icons="../../public/icons/Twitter.svg"
+          AltIcons="Twitter Icono"
+        />
+        <ButtonIcons
+          Href="https://www.linkedin.com"
+          Icons="../../public/icons/Linkedin.svg"
+          AltIcons="Linkedin Icono"
+        />
+        <ButtonIcons
+          Href="https://www.github.com/Angel45003"
+          Icons="../../public/icons/Github.svg"
+          AltIcons="Github Icono"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center justify-center">
+    <Experience Number="2+" TextInfo="Años de experiencia" />
+    <Experience Number="60+" TextInfo="Aplicaciones creadas" />
+    <Experience Number="11" TextInfo="Lenguajes de programación aprendidos." />
+  </div>
+</div>
